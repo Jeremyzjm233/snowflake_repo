@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# dbt
+target/
+dbt_modules/
+logs/
+.DS_Store
+
+# Terraform
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
+*.tfvars
+
+# IDE
+.vscode/
+.idea/
