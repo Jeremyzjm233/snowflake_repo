@@ -1,4 +1,4 @@
-# Snowflake + dbt Starter Repository
+# Snowflake + dbt Repository
 
 A starter data engineering repository with Snowflake + dbt folder conventions and placeholder Terraform infrastructure files for later.
 
