@@ -4,7 +4,7 @@ config-version: 2
 
 profile: "snowflake_repo"
 
-model-paths: ["models"]
+model-paths: ["dbt/models"]
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
 seed-paths: ["data"]
@@ -15,9 +15,7 @@ clean-targets: ["target", "dbt_modules"]
 
 models:
   snowflake_repo:
-    +schema: "PUBLIC"
     staging:
-      +schema: "STAGING"
       +materialized: view
     intermediate:
       +schema: "INTERMEDIATE"

@@ -19,3 +19,8 @@ terraform.tfstate.backup
 # IDE
 .vscode/
 .idea/
+
+# data files
+*.csv
+*.json
+*.xlsx

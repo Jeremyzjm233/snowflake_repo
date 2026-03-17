@@ -1,9 +1,7 @@
 {{ config(materialized='view') }}
 
-select
-  id as customer_id,
-  first_name,
-  last_name,
-  email,
-  created_at
-from {{ source('raw', 'customers') }}
+select 1 as customer_id,
+       'John' as first_name,
+       'Doe' as last_name,
+       'john.doe@example.com' as email,
+       current_timestamp() as created_at
